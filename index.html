@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>IDOR DEMONSTRATION</title>
+</head>
+<body>
+  <div class="flex flex-col  justify-center p-3 align-center">
+<div class="px-20 mb-7">
+    <p id="info" class="text-2xl font-medium">Hello &#x1F64B;, I am Rick developer of this site and because of my silly  logic implementation &#128553; I made this site vulnerable and I am afraid that hackers can hack the admin account &#128552; and steal password anytime <a target="_blank" href="/app.html" class="text-blue-700">Application LINK</a>  </p>
+</div>
+<label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+    Password
+  </label>
+  <input  id="input" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="if you got the password then please submit to me">
+  <button id="btn" class="bg-blue-500 mt-4  text-white font-bold py-2 px-4 rounded">
+    submit
+  </button>
+  </div>
+
+  <script>
+      document.querySelector("#btn").addEventListener("click",()=>{
+          if(document.querySelector("#input").value=="flag{sankalpa}"){
+             document.querySelector("#info").textContent="Lab Solved !"
+              document.querySelector("#btn").disabled=true
+              document.querySelector("#info").classList.add("text-green-500");
+              document.querySelector("#info").classList.add("animate-bounce");
+              document.querySelector("#info").classList.add("text-3xl");
+              document.querySelector("#info").classList.add("font-bold");
+              document.querySelector("#btn").classList.add("bg-gray-500");
+              document.querySelector("#input").disabled=true
+          }
+          else{
+              alert("this is not an admin password");
+          }
+      })
+  </script>
+</body>
+</html>

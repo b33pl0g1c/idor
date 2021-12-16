@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>IDOR DEMONSTRATION</title>
+    <style>
+        .image{
+            width: 133px;
+            height: 133px;
+            object-fit: cover;
+            border:5px solid rgb(16, 226, 16);
+        }
+        .font1{
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+        body{
+            background-color: #23272A  ;
+        }
+    </style>
+</head>
+<body >
+    <div class="w-full flex flex-col mt-4 justify-center items-center ">
+        <img id="img" draggable="false" src="img/beluga.jpg" class="rounded-full image" alt="">
+    <p id="name" class="text-3xl font1 font-semibold text-white mt-3  font-medium">Beluga</p>
+    <div class="flex mt-4">
+    <button class="bg-blue-500 mr-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Add
+      </button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Edit
+      </button>
+    </div>
+</div>
+<div class="mt-12 p-4 px-12 border border-3 border-green-200">
+<p class="text-white text-2xl font-bold">Notes:</p>
+<div>
+    <ul id="list" class="list-disc">
+        <li class="text-white text-xl">I love Fish !</li>
+        <li class="text-white text-xl">Follow me on Instagram</li>
+        <li class="text-white text-xl">this my top secret message</li>
+    </ul>
+
+</div>
+</div>
+<div class="flex justify-center items-center">
+<p  class="align-text-bottom ml-3 mt-7 text-green-400">Designed By Sankalpa Acharya</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

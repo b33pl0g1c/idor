@@ -17,7 +17,7 @@ function replacer(arr){
 }
 beluga=["beluga.jpg","Beluga",["I love Fish","Follow me on instagram ","Meow !"]]
 mr_hacker=["hacker.jpg","Mr Hacker",["Is RSA encryption secure?","Connect to reverse shell","Hack beluga id and read his notes"]]
-admin=["admin.jpg","Admin",["Password:flag{sankalpa}","Merry Christmas","Buy Fish from market"]]
+admin=["admin.jpg","Admin",["Password:INNO{1D0R_1S_S3XY}","Merry Christmas","Buy Fish from market"]]
 unknown=["black.jpg","no user found",["","",""]]
 
 let cookie_value=atob(document.cookie.split(";")[1].replace("user=",""));
